@@ -18,6 +18,7 @@ const TodoContextProvider: React.FC = (props) => {
     const [todos, setTodos] = useState<Todo[]>([])
 
     const addTodoHandler = (todoText: string) => {
+        console.log(todoText)
         const newTodo = new Todo(todoText)
 
         setTodos((prev) => {
